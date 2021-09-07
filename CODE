@@ -123,8 +123,7 @@ Face not found
 Face not found
 Face not found
 Collecting Samples Complete
-Training the model
-In [2]:
+#Training the model
 import cv2
 import numpy as np
 from os import listdir
@@ -159,12 +158,9 @@ model  = cv2.face_LBPHFaceRecognizer.create()
 model.train(np.asarray(Training_Data), np.asarray(Labels))
 print("Model trained sucessefully")
 Model trained sucessefully
-In [ ]:
-
-In [3]:
 def whatsapp():
     pywhatkit.sendwhatmsg_instantly("+918179038873" , "Hai..Your Face Detected..successfully",)
-In [4]:
+
 def aws():
     
 #Launching EC2 Instance
@@ -189,7 +185,6 @@ def aws():
 
     tmp = s.getstatusoutput("aws ec2 attach-volume --volume-id {} --instance-id {} --device /dev/sdf".format(vol_id,instance_id))
     print("done")
-In [5]:
 def email():
     import smtplib
     from email.mime.multipart import MIMEMultipart
@@ -213,7 +208,7 @@ def email():
     #print("Mail Sent")
     s.quit()
 when it recognize face it sends email and whatsapp msg.....
-In [6]:
+
 import cv2
 import numpy as np
 import os
@@ -297,7 +292,6 @@ Mail  sent....check Inbox !!!!
 whatsapp msg sent !!!!
 
 when it recognize face,Model launches an instance and creates EBS volume
-In [ ]:
 import cv2
 import numpy as np
 import os
@@ -376,6 +370,5 @@ cv2.destroyAllWindows()
 <ipython-input-7-f218cf68fff9>:14: SyntaxWarning: "is" with a literal. Did you mean "=="?
   if faces is ():
 Code is ready for model
-In [ ]:
 
 Model run Succesfully...........!!!!!!!
